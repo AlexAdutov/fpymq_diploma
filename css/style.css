@@ -1,0 +1,10 @@
+h1 {
+    color: red;
+    border: 1px solid red;
+}
+
+.header {
+    font-family: OpenSans, sans-serif;
+    background-color: #000000;
+    background-image: url("../images/banner-bg.jpg");
+}
