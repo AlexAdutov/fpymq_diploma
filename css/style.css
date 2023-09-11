@@ -318,3 +318,274 @@
 .post-text:nth-child(n+2) {
     margin-top: 10px;
   }
+
+.side-bar {
+    width: 270px;
+    margin-left: 120px;
+  }
+
+.sidebar-block:nth-child(n+2) {
+    margin-top: 60px;
+  }
+
+.sidebar-block-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+.sidebar-article {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+.sidebar-article:nth-child(n+2) {
+    margin-top: 14px;
+  }
+
+.aside-img {
+    min-width: 70px;
+    margin-top: 8px;
+    margin-right: 19px;
+  }
+  
+.sidebar-title-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+ /*СТИЛИ ДЛЯ ФОРМ*/
+  
+.form-search {
+  margin-top: 60px;
+  display: flex;
+}
+
+.label {
+  flex-grow: 1;
+} 
+
+.empty {
+  width: 0px;
+  height: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.field {
+  display: block;
+  height: 47px;
+  width: 100%;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: #f4f7f6;
+  border-radius: 0;
+  border: 1px solid #f4f7f6;
+  font-family: inherit;
+  font-size: 13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button {
+  height: 47px;
+  border: none;
+  background-color: #b59f5b;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-button {
+  display: inline-block;
+  width: 47px;
+  background-image: url("../svg/search.svg");
+  background-repeat: no-repeat;
+  background-size: 19px auto;
+  background-position: center center;
+}
+
+.email-button {
+  width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  list-style-type: none;
+}
+
+.tag-el {
+  margin-right: 5px;
+  margin-bottom: 6px;
+  border: 3px solid #eeeeee;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.topics {
+  margin-top: 25px;
+  list-style-type: none;
+}
+
+.topic {
+  padding: 14px 0 12px 0;
+  border: 1px solid;
+  border-color: transparent transparent #eeeeee transparent;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+a.capital {
+  text-transform: none;
+}
+
+.uppercase {
+  color: #b59f5b;
+  vertical-align: super;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.shop-block {
+  margin-top: 62px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 23px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-description {
+  width: 300px;
+  margin-top: -9px;
+  padding-top: 29px;
+  padding-bottom: 9px;
+  outline: 3px solid #b59f5b;
+  outline-offset: 20px;
+  flex-grow: 1;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-text {
+  margin-top: 2px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 24px;
+  position: relative;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.old-price {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.shop-button {
+  width: 140px;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: 84px auto 0 auto;
+  padding: 0 15px 20px;
+}
+
+.footer-content {
+  background-color: #f4f7f6;
+  padding: 30px 0;
+}
+
+.emblems {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.emblems-el:nth-child(n+2){
+  margin-left: 30px;
+}
+
+.icon {
+  display: block;
+  min-width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.twitter {
+  background-image: url("../svg/004-twitter.svg");
+}
+
+.pinterest {
+  background-image: url("../svg/001-pinterest.svg");
+}
+
+.facebook {
+  background-image: url("../svg/002-facebook-logo.svg");
+}
+
+.instagram {
+  background-image: url("../svg/005-instagram.svg");
+}
+
+.tumblr {
+  background-image: url("../svg/003-tumblr.svg");
+}
+
+.copyright {
+  max-width: 1200px;
+  text-align: center;
+  margin-top: 72px;
+}
+
+.copyright-link {
+  color: #999999;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
