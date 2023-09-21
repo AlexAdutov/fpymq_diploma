@@ -1,21 +1,21 @@
 @font-face {
-    font-family: Open Sans Bold;
-    src: url(../fonts/OpenSans-Bold.woff);
-    font-weight: 700;
-    font-style: normal;
+    font-family : "Open Sans Bold";
+    src : url(../fonts/OpenSans-Bold.woff);
+    font-weight : 700;
+    font-style : normal;
   }
 
   @font-face {
-    font-family: Open Sans Regular;
-    src: url(../fonts/OpenSans-Regular.woff);
-    font-weight: 400;
-    font-style: normal;
+    font-family : "Open Sans Regular";
+    src : url(../fonts/OpenSans-Regular.woff);
+    font-weight : 400;
+    font-style : normal;
   }
   
   * {
     margin: 0;
     padding: 0;
-    font-family: Open Sans Regular, Arial, sans-serif;
+    font-family: "Open Sans Regular", Arial, sans-serif;
     box-sizing: border-box;
     color: #000000;
     line-height: normal;    
@@ -30,59 +30,16 @@
     color: #ffffff;
   }
   
-  /* стили шапки */
-
- /* #showPopupButton {
-    display: flex;
-    justify-content: center;
-    background-color: #b59f5b;;
-    cursor: pointer;
-
-    width: 20%;
-    height: 35px;
-    border: none;
-    transition-property: background-color;
-    font-family: Open Sans Bold;
-    font-size: 1em;
-    color: #ffffff;
-    position: absolute;
-    position: absolute;
-    /*top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-}*/
-
-#showPopupButton {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; /* Выравнивание элемента по нижнему краю */
-  background-color: #b59f5b;
-  cursor: pointer;
-  width: 20%;
-  height: 35px;
-  border: none;
-  transition-property: background-color;
-  font-family: Open Sans Bold;
-  font-size: 1em;
-  color: #ffffff;
-  position: fixed; /* Фиксированная позиция */
-  bottom: 0; /* Разместить внизу */
-  left: 0; /* Отступ от левого края */
-  right: 0; /* Отступ от правого края */
-  margin: 0 auto; /* Автоматический отступ по горизонтали для центрирования */
-}
-
-
+  /* хэдер */
   .header {    
     padding-bottom: 145px;
-    padding-top: 26px;  
+    padding-top: 26px;    
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-color: #000000;
     z-index: 0;
-    /*position: relative;*/
-   /* margin-top: 35px;*/
+    position: relative;
   }
 
   .header::before {
@@ -92,7 +49,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    opacity: 0.0;
+    opacity: 0.6;
     background-color: #000000;
     z-index: -1;  
   }
@@ -110,7 +67,7 @@
   }
   
   .menu-list { 
-    font-family: Open Sans Regular;
+    font-family: "Open Sans Regular";
     font-size: 13px;  
     display: flex;
     flex-wrap: wrap;
@@ -120,12 +77,6 @@
   .menu-list-item {  
     border-bottom: 1px solid transparent;
     transition-property: border-bottom;
-  }
-  
-  
-  .menu-list-item:hover {  
-    border-bottom: 1px solid #ffffff;
-    transition: 0.6s;
   }
   
   .menu-list-item:nth-child(n+2) {
@@ -138,21 +89,19 @@
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      font-family: Open Sans Bold;
+      font-family: "Open Sans Bold";
       font-size: 45px;    
       text-transform: uppercase;
       color: #ffffff;
-      /*margin-top: 110px; */
+      margin-top: 110px; 
   }
 
 
+
   /* тренды */ 
-
-
   .trend-container {
     display: flex;    
     flex-wrap: nowrap;
-
   }
 
   .trend-card {
@@ -195,7 +144,6 @@
     top: 0;
     left: 0;
     z-index: 1;
-
   }
 
   .card--body {
@@ -216,10 +164,7 @@
     font-size: 20px;    
   }
 
-
-  /* основной контент */
-
-
+  /* основное */
   .page {
     max-width: 1200px;
     margin-right: auto;
@@ -230,7 +175,6 @@
   
   .post {
     display: flex;
-  
   }
   
   .post:nth-child(n+2) {
@@ -256,42 +200,29 @@
   .post-category-item {
     border-bottom: 2px solid transparent;
     transition-property: border-bottom;
-    
   }  
-  
-  .post-category-item:hover {
-    border-bottom: 2px solid #b59f5b;
-    transition: 0.6s;
-    
-  }
   
   .post-category-item {
     margin-right: 20px;  
   }
   
   .post-category-item a {
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
     color: #b59f5b;
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;  
     font-weight: bold;
-    
   }
 
   .main-title {
-    font-family: Open Sans Bold; 
+    font-family: "Open Sans Bold";
     font-size: 1.25rem;
     text-transform: uppercase;
   }
   
   .post-title {    
     transition-property: color;
-  }
-  
-  .post-title:hover {    
-    transition: 0.3s;
-    color: #b59f5b;  
   }
   
   .link-title {
@@ -309,7 +240,7 @@
   }
   
   .author-name {
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
     display: inline-block;  
     font-size: 12px;   
   }
@@ -335,8 +266,6 @@
   }
   
   /* начало боковой панели */
-
-
   .new-posts {    
     width: 270px;
     display: flex;
@@ -352,7 +281,6 @@
   .aside-posts, .page-tags, .page-mailing, .page-topics {
     display: flex;
     flex-direction: column;
-  
   }  
   
   .aside-title {    
@@ -370,9 +298,6 @@
   .aside-posts .aside:first-child {
     margin-bottom: 2.875rem;
   }
-  
-  /* подчеркивание */
-
   
   .aside-title:after {
     content: "";
@@ -397,47 +322,59 @@
   
   .aside-post-info {
     margin-left: 17px;
-    
   }
   
   .aside-post-title {
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
     font-size: 14px;
     text-transform: uppercase;
     transition-property: color;    
   }
-
-  .aside-post-title:hover {
-    color: #b59f5b;
-    transition: 0.3s;
-  }  
   
   /* поиск */
-
-  
   .search {
     display: flex;
     position: relative;
   }
   
-  .search-on, .mail-text {
+ /* .search-on, .mail-text {
     position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
     border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden; 
-  }
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }*/
+
+.search-on, .mail-text {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+ }
   
-  .button-name {
+  /*.button-name {
     width: 1px;
     height: 1px;
     clip: rect(1px, 1px, 1px, 1px);
-    position: absolute;   
+    position: absolute;
+  }*/
+
+  .button-name {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
   }
-  
+
   .search-button {
     width: 50px;
     height: 50px;
@@ -447,14 +384,7 @@
     right: 0;
     top: 0;
     transition-property: background-color;
-    
   }
-  
-  .search-button:hover {
-    background: url(../svg/search.svg) #0f0d0e no-repeat center center/20px;
-    transition: 0.6s;
-    cursor: pointer;
-  }  
   
   .search-name, .mail-label {
     width: 100%;
@@ -476,7 +406,6 @@
     font-size: 14px;
     outline: 1px solid #b59f5b;
     transition: 0.6s;
-    
   }
   
   .page-search {
@@ -485,8 +414,6 @@
   
   
   /* почта */
-
-  
   .subscribe-button {
     width: 100%;
     height: 50px;
@@ -494,26 +421,16 @@
     border: none;
     margin-top: 15px;  
     transition-property: background-color;
-    
   }
   
   .subscribe-name {
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
   }
   
-  .subscribe-button:hover {
-    font-size: 15px;
-    background-color: #0f0d0e;
-    transition: 0.6s;
-    cursor: pointer;
-  }
-  
   /* Тэги */
-
-  
   .tag-container {
     display: flex;
     flex-wrap: wrap;  
@@ -521,32 +438,22 @@
   }
   
   .tag-name {
-    
     border: 4px solid rgba(238, 238, 238, 0.9);
     padding-left: 12px;
     padding-right: 12px;
     margin-right: 5px;
     margin-bottom: 6px;
     transition-property: background-color;
-    
-  }
-  
-  .tag-name:hover {
-    transition: 0.6s;
-    border: 4px solid #b59f5b;
-    
   }
   
   .tag-title {
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
     font-size: 12px;
     text-transform: uppercase;
     color: #000000;
   }
   
   /* Темы */
-
-  
   .page-topics .section-title {
     margin-bottom: 20px;  
   }
@@ -556,8 +463,7 @@
     flex-direction: column;
   }
   
-  .topic {
-    
+  .topic { 
     height: 48px;
     border-bottom: 1px solid #eeeeee;
     display: flex;
@@ -565,26 +471,21 @@
   }
   
   .topic-link {
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
     font-size: 14px;
     color: #000000;
-     transition-property: color;
-  }
-  
-  .topic-link:hover {
-    color: #b59f5b;
-    transition: 0.6s;
+    transition-property: color;
   }
   
   .topic-amount {
     color: #b59f5b;
     font-size: 12px;
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
     padding-bottom: 10px;
     padding-left: 5px;
   }
 
-  .our-products {
+  .product-container {
     display: flex;
     max-width: 1200px;
     margin: auto;
@@ -594,7 +495,7 @@
     flex-wrap: wrap;
   }  
 
-  .product-card {
+  .product-card {    
     width: 29.33%;
     display: flex;
     flex-direction: column;
@@ -631,16 +532,11 @@
   .product--price {
     display: flex;
     flex-direction: row;
-    font-size: 20px;   
-
+    font-size: 20px;
   }   
 
   .product--description {
     font-size: 1em;
-  }
-
-  .product--description:hover p {
-    font-weight: bolder;
   }
 
   .product--footer {
@@ -665,16 +561,9 @@
   }
 
   .product--button {
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
     font-size: 1em;
     color: #ffffff;
-  }
-
-  .product--button:hover {
-    font-size: 15px;
-    background-color: #0f0d0e;
-    transition: 0.6s;
-    cursor: pointer;
   }
 
   .product--content {
@@ -697,14 +586,10 @@
   }
 
   .product--prices * {
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
   }
 
-
-
   /* футер */
-
-  
   .footer-links {  
     max-width: 1200px;
     margin-right: auto;
@@ -729,12 +614,7 @@
     background-repeat: no-repeat;
     background-size: 20px;  
     background-position: center;
-    transition-property: scale;
-  }
-  
-  .social-link:hover {
-    transform: scale(1.1);
-    transition: 0.4s;
+  /*  transition-property: scale;*/
   }
   
   .social-link-twitter {
@@ -757,13 +637,22 @@
     background-image: url("../svg/003-tumblr.svg");  
   }
   
-  .social-link-text {
+  /*.social-link-text {
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
-    width: 1px; 
-  
-  }
+    width: 1px;
+  }*/
+
+.social-link-text {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
   
   .social-icon {  
     width: 30px;
@@ -775,8 +664,7 @@
   }
   
   .copyright-link {
-    
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
     font-size: 11px;
     font-style: normal;
     color: #999999;
@@ -784,13 +672,9 @@
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
-    
   }  
-  
 
   /* Всплывающее окно */
-
-
   .popup {
     display: flex;
     flex-direction: column;
@@ -799,8 +683,6 @@
     padding: 50px 30px;
     background-color: #ffffff;
     position: relative;
-
-
   }
 
   .popup h2 {
@@ -811,17 +693,15 @@
     margin-bottom: 2.25rem;
   }
 
-  .popup-container {
+  .popup-container {    
     width: 100%;
     min-height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.65);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 4;
-    /*opacity: 0.5;*/
     display: flex;
-    /*transition: all 2s ease 0s;*/
   }
 
   .popup--close {
@@ -831,7 +711,6 @@
     position: absolute;
     right: 0;
     top: -26px;
-
   }
 
   .close--button {
@@ -864,18 +743,16 @@
 
   .form-group:nth-child(n+2) {
     margin-top: 30px;
-
   }
 
   .message {
     height: 130px;
     padding: 20px;
     resize: none;
-    
   }
 
   .send-button {    
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
@@ -887,8 +764,6 @@
   }
 
   /* checkbox */
-
-
   .checkbox-text::before {
     content: "";
     display: inline-block;
@@ -898,11 +773,21 @@
     margin-right: 5px;
     background: url(../svg/form-empty-circle.svg) no-repeat center center/20px;
 }
-  .checkbox {
+  /*.checkbox {
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
     width: 1px;
+  }*/
+
+  .checkbox {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
   }
 
   .checkbox:checked + .checkbox-text::before {
@@ -917,19 +802,15 @@
     font-size: 13px;
   }
 
-  
-
-
+  /* медиа */
   /* desktop */
-
-
   @media (min-width: 1200px) {
     .header {
       background-image: url("../images/banner-bg.jpg");
     }
 
+
     .nav-container {
-      
       padding-left: 15px;
       padding-right: 15px;
       margin: auto;
@@ -960,15 +841,12 @@
       margin-bottom: 2.5rem;
       margin-top: 0.875rem;
     }
-    
-
   }
   
-/* tablet */
 
-  
+  /* tablet */
   @media (max-width: 1199px) {
-    
+
     .menu {
       display: none;
     }
@@ -1003,11 +881,9 @@
       padding: 5px;
       margin: 5px;
     }
-    
   }
 
   @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
-    
     .trend-container {
       flex-wrap: wrap;
       
@@ -1022,16 +898,13 @@
     .trend-card:nth-child(odd) {
       margin-right: 1%;
     }
-    
   }
 
   @media (min-width: 920px) and (max-width: 1199px) {
-    
-    .card--body {
+    .card--body {      
       margin: 0.9375rem 1.25rem;
       padding: 1.75em;
     }
-  
   }
 
   @media (min-width: 641px) and (max-width: 1199px) {
@@ -1041,7 +914,7 @@
       padding-bottom: 9.0625rem;
     }
     
-    .section-title-trend {
+    .section-title-trend {      
       margin-top: 2.8125rem;
       margin-bottom: 2rem;
       
@@ -1090,7 +963,7 @@
       margin-top: 1em;
     }
 
-    .our-products {
+    .product-container {
       flex-wrap: wrap;
       margin-bottom: 50px;
       padding-left: 2.1875rem;
@@ -1140,15 +1013,11 @@
     .product {
       margin-bottom: 2.625rem;
       margin-top: 1.125rem;
-    }
-    
+    } 
   }
 
   /* mobile */
-
-
   @media (max-width: 640px) and (orientation: landscape) {
-    
     .trend-container {
       flex-wrap: wrap;            
     }    
@@ -1162,7 +1031,6 @@
     .trend-card:nth-child(odd) {
       margin-right: 1%;
     }
-    
   }
 
   @media (max-width: 640px) and (orientation: portrait) {
@@ -1175,10 +1043,7 @@
       width: 100%;
       margin-top: 1%;
     }
-   
-    
   }
-
 
   @media (max-width: 640px) {
     .header {
@@ -1192,6 +1057,7 @@
       flex-direction: column-reverse;
     }
 
+
     .logo {
       width: 70%;
       margin-top: 11.5rem;
@@ -1199,7 +1065,6 @@
 
     .header-logo {
       width: 100%;
-      
     }
 
     .header-title {
@@ -1217,7 +1082,6 @@
     }   
     
     .page {
-      
       flex-direction: column;
       padding: 0 1rem;
       margin-top: 2.75rem;
@@ -1247,7 +1111,7 @@
       font-size: 1rem;
     }
 
-    .our-products {
+    .product-container {
       flex-direction: column;
     }
 
@@ -1271,7 +1135,7 @@
       font-size: 14px;
     }
 
-    .our-products {
+    .product-container {
       margin-bottom: 2.75em;
     }
 
@@ -1300,6 +1164,4 @@
     .post-info {
       margin-top: 0.875rem;
     }
-
   }
-  
